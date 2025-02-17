@@ -1,0 +1,194 @@
+:root{
+    --main-color:#FFFFFF;
+    --second-color:#000000;
+    --third-color:#1EACC7;
+    --fourth-color: #FF5656;
+    --background-color-button:linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    --background-color-button-second:#000000;
+    --background-color-icon:#1EACC7;
+    --nav-background-color:#212121;
+    --background-color-section:#070716;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    
+}
+
+nav{
+    background-color: var(--nav-background-color);
+}
+button{
+    text-transform: uppercase;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-color);
+    padding: 16px 0;
+    list-style-type: none;
+}
+.menu .item{
+    position: relative;
+}
+.menu .item:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    left: -60px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 5px; 
+    height: 20px; 
+    border-left: 2px dashed var(--second-color);
+}
+.subheader{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--main-color);
+    position: absolute;
+    width: 100%;
+}
+.subheader .row{
+    padding: 20px 0;
+}
+.btn{
+    padding: 15px 15px;
+    text-transform: uppercase;
+    background: var(--background-color-button);
+    color: var(--main-color);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+}
+.subheader .text-logo{
+    font-size: 13px;
+    font-weight: 200;
+}
+.subheader .text{
+    font-size: 12px;
+    font-weight: 300; 
+}
+.subheader .phone{
+    font-size: 22px;
+    font-weight: 400;
+}
+.main{
+    text-align: center;
+    min-height: 800px;
+    background: url(../assets/img/uber_bg.png) center center/ cover no-repeat;
+    padding: 180px 0 180px 0;
+    color: var(--main-color);
+}
+.main h1.title{
+    font-size: 60px;
+    font-weight: 900;
+}
+.main h2.title,
+.about h2.title,
+.mobile-app h2.title{
+    font-size: 36px;
+    font-weight: 700; 
+    text-transform: uppercase;
+}
+.main .text{
+    font-size: 18px;
+    font-weight: 400;
+}
+.main .btn{
+    margin-top: 116px;
+    padding: 15px 35px;
+}
+
+.about{
+    text-align: center;
+    min-height: 770px;
+    margin-top: 20px;
+}
+
+.btn-second {
+    display: block; 
+    margin: 16px auto 32px auto;
+    background-color: var(--background-color-button-second);
+    color: var(--main-color);
+    padding: 5px 10px;
+    border: none;
+}
+
+.about .content{
+    display: flex;
+    margin-top: 26px;
+}
+
+.about .content .round-img{
+    background-color: var(--background-color-icon);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    align-content: center;
+
+}
+.about .content img{
+
+}
+
+.about .content .text{
+    text-align: left;
+    width: 70%;
+    margin-left: 25px;
+}
+
+.about .content .text p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.about .content .text p span{
+    color: var(--third-color);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.mobile-app{
+    margin-top: 112px;
+    min-height: 864px;
+    text-align: center;
+    
+}
+.mobile-app .text{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.mobile-app .card{
+    background: url(../assets/img/card.png) center center/ cover no-repeat;
+    width: 320px;
+    height: 280px;
+    justify-items: center;
+    align-content: center;
+}
+.mobile-app .card .text{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    color: var(--main-color);
+    padding-bottom: 50px;
+}
+.round-content .plus-icon{
+    background-color: var(--background-color-button-second);
+    border-radius: 50%;
+    width: 29px;
+    height: 29px;
+}
+.plus-icon {
+    font-size: 20px; 
+    transform: scale(2);
+
+    color: var(--third-color);
+
+}
