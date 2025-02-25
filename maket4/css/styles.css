@@ -31,6 +31,9 @@ ul {
     max-width: 1140px;
     margin: 0 auto;
 }
+.section{
+    margin-bottom: 120px;
+}
 
 .sidepanel{
     display: flex;
@@ -139,9 +142,6 @@ ul {
     margin-right: 44px;
 }
 
-.about{
-    margin-top: 120px;
-}
 
 .about .about__wrap{
     display: flex;
@@ -214,8 +214,7 @@ ul {
 
 
 .experience{
-    padding: 0 65px;
-    margin-top: 120px;
+    margin-inline: 60px;
 }
 
 .experience .experience__subtitle{
@@ -319,9 +318,6 @@ ul {
     font-size: 14px;
 }
 
-.skills{
-    margin-top: 120px;
-}
 
 .skills .skills__title,
 .skills .skills__subtitle {
@@ -372,9 +368,6 @@ ul {
     margin-bottom: 15px;
 }
 
-.statistics{
-    margin-top: 120px;
-}
 
 .statistics .statistics__items{
     display: flex;
@@ -410,9 +403,6 @@ ul {
     background: var(--main-color); 
 }
 
-.portfolio{
-    margin-top: 120px;
-}
 
 .portfolio .portfolio__title,
 .portfolio .portfolio__subtitle {
@@ -457,10 +447,6 @@ ul {
     transform: scale(1.1)
 }
 
-
-.price-list{
-    margin-top: 120px;
-}
 
 .price-list .price-list__title,
 .price-list .price-list__subtitle {
@@ -514,10 +500,6 @@ ul {
     left: 0;
     top: 0;
     border-radius: 100%;
-}
-
-.contact{
-    margin: 120px 0;
 }
 
 .contact .contact__title{
@@ -740,8 +722,8 @@ ul {
         margin: 0 10px;
     }
 
-    .about {
-        margin-top: 40px;
+    .section {
+        margin-bottom: 60px;
     }
     .about .about__title{
         margin-bottom: 20px;
@@ -755,31 +737,19 @@ ul {
         margin-top: 20px;
         gap: 20px;
     }
-    
-    .experience {
-        padding: 0;
-        margin-top: 60px;
-    }
-    .experience .experience__wrap {
-        gap: 20px;
+
+    .experience{
+        margin-inline: 0;
     }
 
-    .skills {
-        margin-top: 60px;
+    .experience .experience__wrap {
+        gap: 20px;
     }
 
     .skills .skills__item {
         min-width: auto;
         width: auto;
         flex: 0 0 calc(33.33% - 10px)
-    }
-
-    .statistics {
-        margin-top: 60px;
-    }
-
-    .portfolio {
-        margin-top: 60px;
     }
 
     .portfolio .portfolio__items {
@@ -795,19 +765,12 @@ ul {
         overflow: hidden;
     }
     
-    .price-list {
-        margin-top: 60px;
-    }
-
     .contact {
         margin: 60px 0;
     }
     .contact .contact__photo {
         margin-right: 30px;
     }
-
-
-    
 
 
 }
@@ -817,14 +780,14 @@ ul {
         min-height: 500px;
     }
     
-    .about {
-        margin-top: 20px;
+    .section {
+        margin-bottom: 30px;
     }
 
     .about .about__wrap {
-
         gap: 20px;
     }
+
     .about .about__photo {
         margin-right: 0;
         width: auto;
@@ -836,20 +799,9 @@ ul {
         margin: 20px 10px 0 10px;
     }
 
-    .experience {
-        margin-top: 30px;
-    }
-
-    .skills {
-        margin-top: 30px;
-    }
 
     .skills .skills__item {
         flex: 0 0 calc(50% - 10px)
-    }
-
-    .statistics {
-        margin-top: 30px;
     }
 
     .statistics .statistics__items {
@@ -860,13 +812,6 @@ ul {
         width: calc(50% - 45px);
     }
 
-    .portfolio {
-        margin-top: 30px;
-    }
-
-    .price-list {
-        margin-top: 30px;
-    }
 
 }
 
@@ -933,16 +878,18 @@ ul {
     .about .about__photo img {
         width: 100%;
     }
-    .about .about__item {
 
+    .about .about__item {
         text-align: start;
         align-items: center;
         flex-direction: column;
     }
+
     .about .about__items {
         justify-content: center;
         margin: 20px 0 0 0;
     }
+
     .portfolio .portfolio__items {
         grid-template-columns: repeat(2, 1fr);
 
@@ -950,14 +897,13 @@ ul {
     .contact .contact__form .contact__form-input-group {
         flex-wrap: wrap;
     }
-
-
 }
 
 @media (max-width: 360px) {
     .title {
         font-size: 22px;
     }
+    
     .hamburger {
         left: 10px;
         right: auto;
@@ -965,4 +911,3 @@ ul {
     }
     
  }
-
